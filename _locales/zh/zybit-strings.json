@@ -2,6 +2,6 @@
   "zybit.DigitalLED|block": "LED灯|引脚 %pin|状态 %value",
   "zybit.AnalogLED|block": "LED灯|引脚 %pin|亮度 %value",
   "zybit.BreathLED|block": "呼吸灯|引脚 %pin",
-  "zybit.DigitalRGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3",
-  "zybit.AnalogRGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value"
+  "zybit.AnalogRGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3",
+  "zybit.DigitalRGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value"
 }
