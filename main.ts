@@ -69,73 +69,73 @@ namespace zybit {
         }
     }
 
-    //% blockId=zybit_AnalogRGB block="AnalogRGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=zybit_AnalogRGB block="AnalogRGB|pinR %pinR|pinG %pinG|pinB %pinB|valueR %valueR|valueG %valueG|valueB %valueB"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
-    //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
+    //% valueR.min=0 valueR.max=255 valueG.min=0 valueG.max=255 valueB.min=0 valueB.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function AnalogRGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, value1: number, value2: number, value3: number): void {
+    export function AnalogRGB(pinR: AnalogPin, pinG: AnalogPin, pinB: AnalogPin, valueR: number, valueG: number, valueB: number): void {
 
-        pins.analogWritePin(pin1, value1 * 1024 / 256);
-        pins.analogWritePin(pin2, value2 * 1024 / 256);
-        pins.analogWritePin(pin3, value3 * 1024 / 256);
+        pins.analogWritePin(pinR, valueR * 1024 / 256);
+        pins.analogWritePin(pinG, valueG * 1024 / 256);
+        pins.analogWritePin(pinB, valueB * 1024 / 256);
 
     }
 	
-    //% blockId=zybit_DigitalRGB block="DigitalRGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=zybit_DigitalRGB block="DigitalRGB|pinR %pinR|pinG %pinG|pinB %pinB|color %color"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function DigitalRGB(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, value: enColor): void {
-        switch (value) {
+    export function DigitalRGB(pinR: DigitalPin, pinG: DigitalPin, pinB: DigitalPin, color: enColor): void {
+        switch (color) {
             case enColor.OFF: {
-                pins.digitalWritePin(pin1, 0);
-                pins.digitalWritePin(pin2, 0);
-                pins.digitalWritePin(pin3, 0);
+                pins.digitalWritePin(pinR, 0);
+                pins.digitalWritePin(pinG, 0);
+                pins.digitalWritePin(pinB, 0);
                 break;
             }
             case enColor.Red: {
-                pins.digitalWritePin(pin1, 1);
-                pins.digitalWritePin(pin2, 0);
-                pins.digitalWritePin(pin3, 0);
+                pins.digitalWritePin(pinR, 1);
+                pins.digitalWritePin(pinG, 0);
+                pins.digitalWritePin(pinB, 0);
                 break;
             }
             case enColor.Green: {
-                pins.digitalWritePin(pin1, 0);
-                pins.digitalWritePin(pin2, 1);
-                pins.digitalWritePin(pin3, 0);
+                pins.digitalWritePin(pinR, 0);
+                pins.digitalWritePin(pinG, 1);
+                pins.digitalWritePin(pinB, 0);
                 break;
             }
             case enColor.Blue: {
-                pins.digitalWritePin(pin1, 0);
-                pins.digitalWritePin(pin2, 0);
-                pins.digitalWritePin(pin3, 1);
+                pins.digitalWritePin(pinR, 0);
+                pins.digitalWritePin(pinG, 0);
+                pins.digitalWritePin(pinB, 1);
                 break;
             }
             case enColor.White: {
-                pins.digitalWritePin(pin1, 1);
-                pins.digitalWritePin(pin2, 1);
-                pins.digitalWritePin(pin3, 1);
+                pins.digitalWritePin(pinR, 1);
+                pins.digitalWritePin(pinG, 1);
+                pins.digitalWritePin(pinB, 1);
                 break;
             }
             case enColor.Cyan: {
-                pins.digitalWritePin(pin1, 0);
-                pins.digitalWritePin(pin2, 1);
-                pins.digitalWritePin(pin3, 1);
+                pins.digitalWritePin(pinR, 0);
+                pins.digitalWritePin(pinG, 1);
+                pins.digitalWritePin(pinB, 1);
                 break;
             }
             case enColor.Pinkish: {
-                pins.digitalWritePin(pin1, 1);
-                pins.digitalWritePin(pin2, 0);
-                pins.digitalWritePin(pin3, 1);
+                pins.digitalWritePin(pinR, 1);
+                pins.digitalWritePin(pinG, 0);
+                pins.digitalWritePin(pinB, 1);
                 break;
             }
             case enColor.Yellow: {
-                pins.digitalWritePin(pin1, 1);
-                pins.digitalWritePin(pin2, 1);
-                pins.digitalWritePin(pin3, 0);
+                pins.digitalWritePin(pinR, 1);
+                pins.digitalWritePin(pinG, 1);
+                pins.digitalWritePin(pinB, 0);
                 break;
             }
         }
