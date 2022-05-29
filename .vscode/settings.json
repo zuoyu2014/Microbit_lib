@@ -1,0 +1,13 @@
+{
+    "editor.formatOnType": true,
+    "files.autoSave": "afterDelay",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/built/**": true,
+        "**/pxt_modules/**": true
+    },
+    "search.exclude": {
+        "**/built": true,
+        "**/pxt_modules": true
+    }
+}
