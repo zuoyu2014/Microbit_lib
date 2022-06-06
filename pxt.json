@@ -9,6 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
+        "main_input.ts",
         "_locales/zh/zybit-strings.json"
 
     ],

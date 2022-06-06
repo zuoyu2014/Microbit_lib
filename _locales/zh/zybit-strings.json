@@ -4,4 +4,8 @@
   "zybit.BreathLED|block": "呼吸灯|引脚 %pin",
   "zybit.AnalogRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|红色 %valueR|绿色 %valueG|蓝色 %valueB",
   "zybit.DigitalRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|显示 %color"
+
+  "zybit_input.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
+  "zybit_input.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
+  "zybit_input.Button|block": "按键|引脚 %pin|返回 %value",
 }
