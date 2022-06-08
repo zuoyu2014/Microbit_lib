@@ -7,5 +7,5 @@
 
   "zybit_input.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
   "zybit_input.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
-  "zybit_input.Button|block": "按键|引脚 %pin|返回 %value",
+  "zybit_input.Button|block": "按键|引脚 %pin|返回 %value"
 }
