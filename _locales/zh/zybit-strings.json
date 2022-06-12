@@ -1,18 +1,17 @@
 {
-  "zybit.DigitalLED|block": "LED灯|引脚 %pin|状态 %value",
-  "zybit.AnalogLED|block": "LED灯|引脚 %pin|亮度 %value",
-  "zybit.BreathLED|block": "呼吸灯|引脚 %pin",
-  "zybit.AnalogRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|红色 %valueR|绿色 %valueG|蓝色 %valueB",
-  "zybit.DigitalRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|显示 %color",
+  "显示设备.DigitalLED|block": "LED灯|引脚 %pin|状态 %value",
+  "显示设备.AnalogLED|block": "LED灯|引脚 %pin|亮度 %value",
+  "显示设备.BreathLED|block": "呼吸灯|引脚 %pin",
+  "显示设备.AnalogRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|红色 %valueR|绿色 %valueG|蓝色 %valueB",
+  "显示设备.DigitalRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|显示 %color",
 
-  "joystick.Gamepad_Press|block": "手柄|按键 %button 按下？",
-  "joystick.Gamepad_Release|block": "手柄|按键 %button 抬起？",
-  "joystick.Gamepad_Shock|block": "手柄|敲击频率 %shock",
-  "joystick.Gamepad_Vibration|block": "手柄|震动频率 %freq",
-  "joystick.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
+  "游戏手柄.Gamepad_Press|block": "手柄|按键 %button 按下？",
+  "游戏手柄.Gamepad_Release|block": "手柄|按键 %button 抬起？",
+  "游戏手柄.Gamepad_No_Action|block": "手柄|按键 %button 空闲？",
+  "游戏手柄.Gamepad_Shock|block": "手柄|敲击频率 %shock",
+  "游戏手柄.Gamepad_Vibration|block": "手柄|震动频率 %freq",
+  "游戏手柄.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
   
 
-  "zybit_input.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
-  "zybit_input.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
-  "zybit_input.Button|block": "按键|引脚 %pin|返回 %value"
+  "输入设备.TouchPad|block": "触摸开关|引脚 %pin 被触摸？"
 }
