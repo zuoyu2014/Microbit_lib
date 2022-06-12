@@ -112,3 +112,38 @@ namespace zybit_input {
 
     }  
 }
+
+
+
+//% color="#FFA500" weight=10 icon="\uf2c9" 
+namespace joystick {
+    let JOYSTICK_I2C_ADDR = 0x5A;
+    let NONE_PRESS = 8;
+
+	export enum JButton {
+		//% blockId="LB" block="左按键"
+		JOYSTICK_BUTOON_LEFT_S = 0x20,
+		//% blockId="RB" block="右按键" 
+		JOYSTICK_BUTOON_RIGHT_S = 0x21,
+		//% blockId="LBR" block="左摇杆"
+		JOYSTICK_BUTOON_LEFT = 0x22,
+		//% blockId="RBR" block="右摇杆" 
+		JOYSTICK_BUTOON_RIGHT = 0x23,
+	}
+
+    function i2cread(addr: number, reg: number) {
+        pins.i2cWriteNumber(addr, reg, NumberFormat.UInt8BE);
+        let val = pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
+        return val;
+    }
+
+    function Get_Button_Status (button : JButton){
+		return i2cread(JOYSTICK_I2C_ADDR, button);
+    }
+
+    //% blockId=joystick_Gamepad_Press block="Gamepad_Press|button %button"
+    //% weight=74
+    export function Gamepad_Press(button: JButton): boolean {
+        return (Get_Button_Status(button) == 0);
+    }
+}
