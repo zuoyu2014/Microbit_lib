@@ -167,14 +167,14 @@ namespace joystick {
    //% shock.min=0 shock.max=1000
    //% weight=74
     export function Gamepad_Shock(shock: number): void {
-        pins.analogWritePin(AnalogPin.P1, shock)
+        pins.analogWritePin(AnalogPin.P0, shock)
     }
 
     //% blockId=Gamepad_Vibration block="Gamepad_Vibration|freq %freq"
     //% freq.min=0 freq.max=1000
     //% weight=74
     export function Gamepad_Vibration(freq: number): void {
-        pins.analogWritePin(AnalogPin.P0, freq)
+        pins.analogWritePin(AnalogPin.P1, freq)
     }
 
    //% blockId=Gamepad_Rocker block="Gamepad_Rocker|rocker %rocker"
