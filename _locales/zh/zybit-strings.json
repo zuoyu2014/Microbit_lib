@@ -5,7 +5,12 @@
   "zybit.AnalogRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|红色 %valueR|绿色 %valueG|蓝色 %valueB",
   "zybit.DigitalRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|显示 %color",
 
-  "joystick.Gamepad_Press|block": "手柄|按键 %button",
+  "joystick.Gamepad_Press|block": "手柄|按键 %button 按下？",
+  "joystick.Gamepad_Release|block": "手柄|按键 %button 抬起？",
+  "joystick.Gamepad_Shock|block": "手柄|敲击频率 %shock",
+  "joystick.Gamepad_Vibration|block": "手柄|震动频率 %freq",
+  "joystick.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
+  
 
   "zybit_input.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
   "zybit_input.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
