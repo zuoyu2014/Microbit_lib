@@ -11,7 +11,7 @@
   "游戏手柄.Gamepad_Shock|block": "手柄|敲击频率 %shock",
   "游戏手柄.Gamepad_Vibration|block": "手柄|震动频率 %freq",
   "游戏手柄.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
-  
 
-  "输入设备.TouchPad|block": "触摸开关|引脚 %pin 被触摸？"
+  "数字输入.TouchPad|block": "触摸开关|引脚 %pin 被触摸？",
+  "数字输入.InfraredDetector|block": "红外检测|引脚 %pin 检测到障碍？"
 }

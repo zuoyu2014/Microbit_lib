@@ -85,7 +85,7 @@ namespace 显示设备 {
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function DigitalRGB(pinR: DigitalPin, pinG: DigitalPin, pinB: DigitalPin, color: enColor): void {
         switch (color) {
             case enColor.OFF: {

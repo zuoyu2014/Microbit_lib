@@ -5,15 +5,25 @@ modified from zy
 
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace 输入设备 {
-    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|value %value"
+namespace 数字输入 {
+    //% blockId=数字输入_TouchPad block="TouchPad|pin %pine"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function TouchPad(pin: DigitalPin): boolean {
         pins.setPull(pin, PinPullMode.PullUp);
-        return (pins.digitalReadPin(pin) == value)
+        return (pins.digitalReadPin(pin) == 1)
+    }
+
+    //% blockId=数字输入_InfraredDetector block="InfraredDetector|pin %pin"
+    //% weight=100
+    //% blockGap=10
+    //% color="#808080"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
+    export function InfraredDetector (pin: DigitalPin): boolean {
+        pins.setPull(pin, PinPullMode.PullUp);
+        return (pins.digitalReadPin(pin) == 0)
     }
 }
 
