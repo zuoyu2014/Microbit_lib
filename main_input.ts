@@ -33,14 +33,14 @@ namespace 游戏手柄 {
     let JOYSTICK_I2C_ADDR = 0x5A;
 
 	export enum JButton {
-		//% block="左按键"
-		JOYSTICK_BUTOON_LEFT_S = 0x20,
-		//% block="右按键" 
-		JOYSTICK_BUTOON_RIGHT_S = 0x21,
 		//% block="左摇杆"
-		JOYSTICK_BUTOON_LEFT = 0x22,
+		JOYSTICK_BUTOON_LEFT = 0x20,
 		//% block="右摇杆" 
-		JOYSTICK_BUTOON_RIGHT = 0x23,
+		JOYSTICK_BUTOON_RIGHT = 0x21,
+		//% block="左按键"
+		JOYSTICK_BUTOON_LEFT_S = 0x22,
+		//% block="右按键" 
+		JOYSTICK_BUTOON_RIGHT_S = 0x23
 	}
 
 	export enum Rocker{
@@ -51,7 +51,7 @@ namespace 游戏手柄 {
 		//% block="右摇杆X"
 		JOYSTICK_ROCKER_RIGHT_X = 0x12,
 		//% block="右摇杆Y"
-		JOYSTICK_ROCKER_RIGHT_Y = 0x13,
+		JOYSTICK_ROCKER_RIGHT_Y = 0x13
 	}
 
     function i2cread(addr: number, reg: number) {
