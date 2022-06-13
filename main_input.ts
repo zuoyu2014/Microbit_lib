@@ -13,7 +13,7 @@ namespace 数字输入 {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function TouchPad(pin: DigitalPin): boolean {
         pins.setPull(pin, PinPullMode.PullUp);
-        return (pins.digitalReadPin(pin) == 1)
+        return (pins.digitalReadPin(pin) == 0)
     }
 
     //% blockId=数字输入_InfraredDetector block="InfraredDetector|pin %pin"
