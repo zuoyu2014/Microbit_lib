@@ -64,39 +64,39 @@ namespace 游戏手柄 {
 		return i2cread(JOYSTICK_I2C_ADDR, button);
     }
 
-    //% blockId=Gamepad_Press block="Gamepad_Press|button %button"
+    //% blockId=游戏手柄_Gamepad_Press block="Gamepad_Press|button %button"
     //% weight=74
     export function Gamepad_Press(button: JButton): boolean {
         return (Get_Button_Status(button) == 0);
     }
 
-   //% blockId=Gamepad_Release block="Gamepad_Release|button %button"
+   //% blockId=游戏手柄_Gamepad_Release block="Gamepad_Release|button %button"
    //% weight=74
    export function Gamepad_Release(button: JButton): boolean {
        return (Get_Button_Status(button) == 1);
    }
 
-   //% blockId=Gamepad_No_Action block="Gamepad_No_Action|button %button"
+   //% blockId=游戏手柄_Gamepad_No_Action block="Gamepad_No_Action|button %button"
    //% weight=74
    export function Gamepad_No_Action(button: JButton): boolean {
        return (Get_Button_Status(button) == 8);
    }
 
-   //% blockId=Gamepad_Shock block="Gamepad_Shock|shock %shock"
+   //% blockId=游戏手柄_Gamepad_Shock block="Gamepad_Shock|shock %shock"
    //% shock.min=0 shock.max=1000
    //% weight=74
     export function Gamepad_Shock(shock: number): void {
         pins.analogWritePin(AnalogPin.P0, shock)
     }
 
-    //% blockId=Gamepad_Vibration block="Gamepad_Vibration|freq %freq"
+    //% blockId=游戏手柄_Gamepad_Vibration block="Gamepad_Vibration|freq %freq"
     //% freq.min=0 freq.max=1000
     //% weight=74
     export function Gamepad_Vibration(freq: number): void {
         pins.analogWritePin(AnalogPin.P1, freq)
     }
 
-   //% blockId=Gamepad_Rocker block="Gamepad_Rocker|rocker %rocker"
+   //% blockId=游戏手柄_Gamepad_Rocker block="Gamepad_Rocker|rocker %rocker"
    //% weight=74
    export function Gamepad_Rocker(rocker: Rocker){
        return i2cread(JOYSTICK_I2C_ADDR, rocker);
