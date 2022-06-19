@@ -13,7 +13,7 @@
   "joystick.Gamepad_Shock|block": "手柄|敲击频率 %shock",
   "joystick.Gamepad_Vibration|block": "手柄|震动频率 %freq",
   "joystick.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
-  "{id:category}joystick": "游戏手柄",
+  "{id:category}Joystick": "游戏手柄",
 
   "digital_input|block": "数字输入",
   "digital_input.TouchPad|block": "触摸开关|引脚 %pin 被触摸？",
