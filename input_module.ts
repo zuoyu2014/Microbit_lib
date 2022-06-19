@@ -3,10 +3,39 @@ Copyright (C): None
 modified from zy
 */
 
+//% color="#808080" weight=23 icon="\uf11c"
+namespace comb_input {
+   let distanceBuf = 0;
+
+   /**
+    * Get RUS04 distance
+   */
+   //% blockId=组合输入_Ultrasonic block="Ultrasonic|pin %pin"
+   //% weight=76
+   export function Ultrasonic(pin: DigitalPin): number {
+       pins.setPull(pin, PinPullMode.PullNone);
+       pins.digitalWritePin(pin, 0);
+       control.waitMicros(2);
+       pins.digitalWritePin(pin, 1);
+       control.waitMicros(50);
+       pins.digitalWritePin(pin, 0);
+       control.waitMicros(1000);
+       while(!pins.digitalReadPin(pin));
+       // read pulse
+       let d = pins.pulseIn(pin, PulseValue.High, 25000);
+       let ret = d;
+       // filter timeout spikes
+       if (ret == 0 && distanceBuf != 0) {
+           ret = distanceBuf;
+       }
+       distanceBuf = d;
+       return Math.floor(ret * 9 / 6 / 58);
+   }
+}
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace 数字输入 {
-    //% blockId=数字输入_TouchPad block="TouchPad|pin %pine"
+namespace digital_input {
+    //% blockId=数字输入_TouchPad block="TouchPad|pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -29,7 +58,7 @@ namespace 数字输入 {
 
 
 //% color="#FFA500" weight=10 icon="\uf2c9" 
-namespace 游戏手柄 {
+namespace joystick {
     let JOYSTICK_I2C_ADDR = 0x5A;
 
 	export enum JButton {

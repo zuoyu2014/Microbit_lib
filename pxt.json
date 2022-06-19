@@ -8,11 +8,9 @@
     },
     "files": [
         "README.md",
-        "main.ts",
-        "main_input.ts",
-        "sensor_bit.ts",
+        "display_module.ts",
+        "input_module.ts",
         "_locales/zh/zybit-strings.json"
-
     ],
     "testFiles": [
         "test.ts"
