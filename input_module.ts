@@ -3,6 +3,7 @@ Copyright (C): None
 modified from zy
 */
 
+//% blockId=comb_input block="comb_input"
 //% color="#808080" weight=23 icon="\uf11c"
 namespace comb_input {
    let distanceBuf = 0;
@@ -10,7 +11,7 @@ namespace comb_input {
    /**
     * Get RUS04 distance
    */
-   //% blockId=组合输入_Ultrasonic block="Ultrasonic|pin %pin"
+   //% blockId=comb_input_Ultrasonic block="Ultrasonic|pin %pin"
    //% weight=76
    export function Ultrasonic(pin: DigitalPin): number {
        pins.setPull(pin, PinPullMode.PullNone);
