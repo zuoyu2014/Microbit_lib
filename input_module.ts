@@ -12,7 +12,6 @@ namespace comb_input {
    */
    //% blockId=comb_input_Ultrasonic block="Ultrasonic|pin %pin"
    //% weight=76
-	//% subcategory="复合输入"
    export function Ultrasonic(pin: DigitalPin): number {
        pins.setPull(pin, PinPullMode.PullNone);
        pins.digitalWritePin(pin, 0);

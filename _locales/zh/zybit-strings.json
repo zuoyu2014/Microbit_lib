@@ -1,20 +1,25 @@
 {
+  "display|block": "显示设备",
   "display.DigitalLED|block": "LED灯|引脚 %pin|状态 %value",
   "display.AnalogLED|block": "LED灯|引脚 %pin|亮度 %value",
   "display.BreathLED|block": "呼吸灯|引脚 %pin",
   "display.AnalogRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|红色 %valueR|绿色 %valueG|蓝色 %valueB",
   "display.DigitalRGB|block": "RGB七彩灯|引脚R %pinR|引脚G %pinG|引脚B %pinB|显示 %color",
-
+  
+  "joystick|block": "游戏手柄",
   "joystick.Gamepad_Press|block": "手柄|按键 %button 按下？",
   "joystick.Gamepad_Release|block": "手柄|按键 %button 抬起？",
   "joystick.Gamepad_No_Action|block": "手柄|按键 %button 空闲？",
   "joystick.Gamepad_Shock|block": "手柄|敲击频率 %shock",
   "joystick.Gamepad_Vibration|block": "手柄|震动频率 %freq",
   "joystick.Gamepad_Rocker|block": "手柄|摇杆位置 %rocker",
+  "{id:category}joystick": "游戏手柄",
 
+  "digital_input|block": "数字输入",
   "digital_input.TouchPad|block": "触摸开关|引脚 %pin 被触摸？",
   "digital_input.InfraredDetector|block": "红外检测|引脚 %pin 检测到障碍？",
   
+  "comb_input|block": "组合输入",
   "comb_input.Ultrasonic|block": "超声测距|引脚 %pin 距离"
   
   
