@@ -4,7 +4,7 @@ modified from zy
 */
 
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace 显示设备 {
+namespace display {
     export enum enColor {
         //% blockId="OFF" block="灭"
         OFF = 0,
