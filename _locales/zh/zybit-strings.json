@@ -22,7 +22,7 @@
   "{id:category}Digital_input": "数字输入",
   
   "comb_input|block": "组合输入",
-  "comb_input.Ultrasonic|block": "超声测距|引脚 %pin 距离"
+  "comb_input.Ultrasonic|block": "超声测距|引脚 %pin 距离",
   "{id:category}Comb_input": "组合输入"
   
   
