@@ -3,8 +3,8 @@ Copyright (C): None
 modified from zy
 */
 
-//% blockId=comb_input block="comb_input"
 //% color="#808080" weight=23 icon="\uf11c"
+//% subcategory="复合输入"
 namespace comb_input {
    let distanceBuf = 0;
 
