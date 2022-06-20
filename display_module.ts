@@ -3,7 +3,7 @@ Copyright (C): None
 modified from zy
 */
 
-//% color="#C814B8" weight=25 icon="\uf1d4"
+//% color="#C814B8" weight=25 icon="\uf11c"
 namespace display {
     export enum enColor {
         //% blockId="OFF" block="灭"
